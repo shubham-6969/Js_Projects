@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+ background-color: #091b41;
+ color: #fff;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+ padding: 10px;
+}
+
+.container {
+ width: 90%;
+ max-width: 700px;
+ text-align: center;
+}
+
+/* Password Display Section */
+.display {
+ width: 100%;
+ margin-top: 40px;
+ margin-bottom: 25px;
+ background: #fff;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+ border-radius: 5px;
+ overflow: hidden;
+}
+
+.container h1 {
+ font-weight: 500;
+ font-size: 2.5rem; /* Responsive font size */
+}
+
+.container h1 span {
+ color: #9dec0a;
+ border-bottom: 4px solid #019f55;
+ padding-bottom: 5px;
+}
+
+.display img {
+ width: 25px;
+ cursor: pointer;
+}
+
+.display input {
+ border: none;
+ outline: none;
+ font-size: 1.5rem; /* Responsive text size */
+ width: 100%;
+}
+
+/* Button Section */
+.container button {
+ border: none;
+ outline: none;
+ background: #019f55;
+ color: #fff;
+ font-size: 1.2rem; /* Responsive font size */
+ font-weight: 300;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 12px 20px;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: 0.3s ease;
+ width: 100%;
+ max-width: 300px;
+ margin: auto;
+}
+
+.container button:hover {
+ background: #017a41;
+}
+
+.container button img {
+ width: 22px;
+ margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+ .container {
+   margin: 8%;
+   width: 95%;
+ }
+ 
+ .container h1 {
+   font-size: 2rem; 
+ }
+
+ .display {
+   padding: 15px;
+   flex-direction: column;
+   gap: 10px;
+ }
+
+ .display input {
+   font-size: 1.2rem;
+   text-align: center;
+   width: 100%;
+ }
+
+ .display img {
+   width: 22px;
+ }
+
+ .container button {
+   font-size: 1rem;
+   padding: 10px;
+ }
+}
+
+@media (max-width: 480px) {
+ .container h1 {
+   font-size: 1.8rem;
+ }
+
+ .display {
+   padding: 10px;
+ }
+
+ .display input {
+   font-size: 1rem;
+ }
+
+ .container button {
+   font-size: 0.9rem;
+   padding: 8px;
+ }
+}
